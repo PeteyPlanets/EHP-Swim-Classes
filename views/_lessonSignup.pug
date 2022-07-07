@@ -1,0 +1,73 @@
+section.signup--form#lesson--form
+  .signup--form__container
+    h1.form--heading__home REGISTER
+    .form__container--left
+      form.form.lesson(action='')
+        .form__group
+          label.form__label(for='name') Name
+          input#name.form__input(type='text' name='name' placeholder='Enter your name' required='')
+        .form__group
+          label.form__label(for='phone') Phone
+          input#phone.form__input(type='tel' name='phone' placeholder='Enter a phone number to contact you with' required='')
+        .form__group.select.split--input
+          .split--group
+            label.form__label(for='age') Age
+            select#age.form__select(name='age')
+              option(value='1') &lt; 1
+              option(value='1') 1
+              option(value='2') 2
+              option(value='3') 3
+              option(value='4') 4
+              option(value='5') 5
+              option(value='6') 6
+              option(value='7') 7
+              option(value='8') 8
+              option(value='9') 9
+              option(value='10') 10
+              option(value='11') 11
+              option(value='12') 12
+              option(value='13') 13
+              option(value='14') 14
+              option(value='15') 15
+              option(value='16') 16
+              option(value='17') 17
+              option(value='Adult') 18+
+          .split--group
+            label.form__label(for='gender') Gender
+            select#gender.form__select(name='gender')
+              option(value='male') Male
+              option(value='female') Female
+        .form__group.select.split--input
+          .split--group
+            label.form__label(for='preferredDates') Preferred Time
+            select#preferredDates.form__select(name='preferredDates')
+              option(value='None') No Preference
+              option(value='Mornings') Mornings
+              option(value='Afternoons') Afternoons
+              option(value='Weekends') Weekends
+              option(value='Weekdays') Weekdays
+              option(value='Weekend Mornings') Weekend Mornings
+              option(value='Weekday Mornings') Weekday Mornings
+              option(value='Weekend Afternoons')
+                | Weekend Afternoons
+              option(value='weekdayAfternoons')
+                | Weekday Afternoons
+          .split--group
+            label.form__label(for='preferredInstructor') Preferred Instructor
+            select#preferredInstructor.form__select(name='preferredInstructor')
+              option(value='none') No Preference
+              option(value='Will') Will
+              option(value='Ashlee') Ashlee
+              option(value='Scott') Scott
+              option(value='Ryan') Ryan
+              option(value='Bryan') Bryan
+              option(value='Brendan') Brendan
+              option(value='Kailen') Kailen
+              option(value='Max') Max
+              option(value='Alex') Alex
+        .form__group
+          label.form__label(for='addedNotes') Add Notes
+          textarea#addedNotes(rows='5' name='addedNotes' placeholder='Please provide some notes on the current level of the swimmer, potential additional swimmers you want lessons for, and any specific goals you are looking to achieve with private lessons')
+        .btn__container
+          button.btn__submit Submit
+    .form__container--right

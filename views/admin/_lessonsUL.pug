@@ -1,0 +1,21 @@
+.user-view
+  nav.user-view__menu
+    ul.side-nav
+    if (user.role === 'admin')
+      .admin-nav
+        h5.admin-nav__heading Admin
+        ul.side-nav
+          +navItem('/admin', 'Settings', 'settings-outline')
+          +navItem('/admin/lessons', 'Lessons', 'clipboard-outline', true)
+          +navItem('/admin/water-aerobics', 'Water Aerobics', 'water-outline')
+
+  .user-view__content
+    .user-view__form-container
+      h2.form--heading Lessons
+      ul.lessons__list
+        each lesson in lessons
+          li(data-id=`${lesson.id}`).lesson
+            .lesson--container
+              p.lesson__text #{`${lesson.name}: ${lesson.age} year old ${lesson.gender === 'male' ? 'boy' : 'girl'}.`}
+            ion-icon(class=`${lesson.assignedInstructor ? 'icon--green' : 'icon--red'}`, name=`${lesson.assignedInstructor ? 'checkmark-circle-outline' : 'alert-circle-outline'}`)
+          .line__lessons

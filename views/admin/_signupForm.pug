@@ -1,0 +1,30 @@
+.user-view
+  nav.user-view__menu
+    ul.side-nav
+      .admin-nav
+        h5.admin-nav__heading Admin
+        ul.side-nav
+          +navItem('/admin', 'Settings', 'settings-outline', true)
+          +navItem('/admin/lessons', 'Lessons', 'clipboard-outline')
+
+  .user-view__content
+    .user-view__form-container
+      h2.form--heading Create an Account
+
+      form.form.form-user-signup
+        .form__group
+          label.form__label(for='name') Name
+          input#name.form__input(type='text', placeholder=`Your name here`, required, name='name')
+        .form__group.ma-bt-md
+          label.form__label(for='email') Email address
+          input#email.form__input(type='email', placeholder=`Enter your email`, required, name='email')
+        .form__group
+          label.form__label(for='password') Create password
+          input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group.ma-bt-lg
+          label.form__label(for='password-confirm') Confirm password
+          input#password-confirm.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group.right
+        
+        .form__group
+          button.btn.btn--small.btn--green.create__account Create Account

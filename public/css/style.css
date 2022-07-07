@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/*****************************/
+/* HOME PAGE */
+/*****************************/
+.section--main,
+.section--pricing {
+  padding: 0 24.6rem;
+}
+
+.logo__container {
+  width: 100%;
+  text-align: center;
+  margin: 3.2rem 0;
+}
+.logo__container img {
+  width: 20rem;
+}
+
+/* SIGN UP */
+form.lesson,
+form.wa--signup {
+  width: 100%;
+}
+
+.signup--form {
+  padding: 5% 8%;
+  background-color: rgb(244, 244, 244);
+  width: 100vw;
+}
+
+.signup--form__container {
+  position: relative;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.form__container--left {
+  width: 60%;
+  padding: 6% 4% 4% 4%;
+  background-color: #fff;
+}
+.form__container--right {
+  width: 40%;
+  background-color: black;
+  background-image: url(/img/park-photos/interactive.jpeg);
+  background-size: cover;
+}
+
+.img--container img {
+  width: 100%;
+}
+
+.login-form {
+  margin: 20rem auto;
+  max-width: 55rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 5rem 7rem;
+  border-radius: 5px;
+}
+
+.form--heading {
+  font-size: 3.2rem;
+  font-family: "Lato", sans-serif;
+  color: #9dc41b;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#111e80) to(#a4ffec)
+  );
+  background-image: linear-gradient(to right bottom, #111e80, #a4ffec);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+.form--heading.home {
+  background-image: none;
+  color: #333;
+}
+
+.form__input,
+.form__select,
+.form__group textarea {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #777;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form__select {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.form__input:focus,
+.email__input:focus {
+  outline: none;
+  border-bottom: 3px solid #9dc41b;
+}
+.form__input:focus:invalid,
+.email__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.form__input::-webkit-input-placeholder {
+  color: #bbb;
+}
+.form__input::placeholder,
+.form__select::placeholder,
+.form__group textarea::placeholder {
+  color: #bbb;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.form__group textarea {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #777;
+}
+
+.form__upload:focus + label {
+  outline: 3px solid #55c57a;
+  outline-offset: 3px;
+}
+
+.form__upload + label {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.form__upload + label:hover {
+  background-color: #55c57a;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.select label {
+  position: relative;
+}
+.select label:after {
+  content: "<>";
+  font-size: 16px;
+  color: #aaa;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 8px;
+  top: 4rem;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  pointer-events: none;
+}
+
+.split--input {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.split--group {
+  width: 50%;
+}
+
+/* Button */
+.btn__container {
+  text-align: center;
+}
+
+.btn__submit,
+.btn__submit:link,
+.btn__submit:visited {
+  font-size: 1.4rem;
+  padding: 1.4rem 3rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  cursor: pointer;
+  background-color: #55c57a;
+  color: #f2f2f2;
+  letter-spacing: 0.5px;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.btn__submit:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-color: #48ab69;
+  cursor: pointer;
+}
+
+.btn__submit:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn__submit:focus {
+  outline: none;
+  background-color: #2e864b;
+}
+
+/* NAVIGATION */
+.nav__el,
+.nav__el:link,
+.nav__el:visited {
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav__el::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background-color: #fff;
+  width: 0%;
+  height: 1px;
+  transition: all 0.3s;
+}
+.nav__el::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: #fff;
+  width: 0%;
+  height: 1px;
+  transition: all 0.3s;
+}
+
+.nav__el:hover::before,
+.nav__el:hover::after {
+  width: 100%;
+}
+
+/* PRODUCT CARDS */
+.section--pricing {
+  padding: 5% 8%;
+  width: 100vw;
+}
+
+.product--cards__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.product--attributes__container {
+  align-self: flex-start;
+}
+.product--info__heading {
+  /* position: absolute;
+  left: 2%;
+  top: 2%; */
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 4.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#111e80) to(#5ff6d5)
+  );
+  background-image: linear-gradient(to right bottom, #111e80, #5ff6d5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+}
+
+.product--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: rgba(245, 245, 245, 0.96);
+  border-radius: 8px;
+  padding: 4%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.product--card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.small--heading {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.lesson--price {
+  font-size: 6.4rem;
+  margin: 8% 0;
+  font-weight: bold;
+}
+
+.product--attribute {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.product--attribute ion-icon {
+  font-size: 3.2rem;
+  color: #48ab69;
+}
+
+.product--card__btn,
+.product--card__btn:link,
+.product--card__btn:visited {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 5% 10%;
+  border-radius: 100px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin-top: 8%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.product--card__btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-color: rgb(246, 246, 246);
+}
+.product--card__btn:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.btn__container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.save__badge {
+  position: absolute;
+  top: 4%;
+  right: -16%;
+  transform: rotate(45deg);
+  background-color: #48ab69;
+  background-image: linear-gradient(to right bottom, #1a31db, #5ff6d5);
+  padding: 2% 20%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.form--heading__home {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  font-size: 3.2rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#111e80) to(#a4ffec)
+  );
+  background-image: linear-gradient(to right bottom, #111e80, #a4ffec);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+.warning--text {
+  color: rgb(255, 7, 7);
+  font-size: 1.8rem;
+  margin: 4.8rem auto;
+  margin-bottom: 0;
+  line-height: 1.5;
+  width: 70%;
+  text-align: center;
+}
+
+/* WATER AEROBICS */
+.hero--section,
+.hero--section__home {
+  width: 100vw;
+  height: 75vh;
+  margin-top: 15vh;
+  background-color: #f7f7f7;
+  background-image: url(/img/park-photos/wa.jpeg);
+  background-size: cover;
+  position: relative;
+}
+
+.hero--section__home {
+  background-image: url(/img/park-photos/swim-lesson.jpeg);
+  background-position: 0 -20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--overlay,
+.hero--overlay__home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.hero--overlay__home {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero--title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero--subtitle {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero--cta {
+  letter-spacing: 0.5px;
+  margin-top: 2.4rem;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  font-weight: 500;
+  width: 12%;
+}
+
+.hero--cta:hover {
+  background-color: #a4ffec;
+  cursor: pointer;
+}
+
+.hero--title,
+.hero--subtitle,
+.hero--cta {
+  z-index: 20;
+}
+
+/* Description Section (Water Aerobics) */
+.description--heading {
+  font-family: "Lato", sans-serif;
+  font-size: 3.2rem;
+  color: #333;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#111e80) to(#a4ffec)
+  );
+  background-image: linear-gradient(to right bottom, #111e80, #5ff6d5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+}
+.description--section::after {
+  content: "";
+  border-bottom: 1px solid rgb(203, 203, 203);
+  width: 90%;
+  padding-top: 6.4rem;
+}
+.description--section {
+  padding: 0 12.8rem;
+  padding-top: 6.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+.description__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2.4rem;
+}
+.description--left {
+  width: 40%;
+}
+.description--left img {
+  width: 90%;
+  border-radius: 8px;
+}
+.description--right {
+  width: 40%;
+  padding: 3.2rem 0;
+  align-self: flex-start;
+  position: relative;
+}
+.instructor--signiature {
+  position: absolute;
+  right: 5%;
+  bottom: -5%;
+}
+.product--attribute__text {
+  line-height: 2.4;
+  font-size: 1.6rem;
+}
+
+/* SCHEDULE */
+.schedule--section {
+  background-color: rgb(252, 252, 252);
+  padding: 6.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.schedule--heading {
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#111e80) to(#a4ffec)
+  );
+  background-image: linear-gradient(to right bottom, #111e80, #5ff6d5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+.schedule__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 25%;
+  /* background-color: rgba(0, 0, 0, 0.15); */
+}
+
+.schedule__list--item {
+  font-size: 1.8rem;
+}
+
+.section--pricing.wa--pricing {
+  margin-top: 0;
+}
+
+.section--img {
+  background-image: url(/img/park-photos/sign.jpeg);
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: 0 -7rem;
+}

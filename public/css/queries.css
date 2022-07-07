@@ -1,0 +1,362 @@
+@media screen and (max-width: 1200px) {
+  .product--cards__container {
+    width: 80%;
+  }
+  .product--card {
+    width: 60%;
+  }
+
+  .hero--cta {
+    width: 15%;
+  }
+
+  .section--img {
+    background-position: 0 -4rem;
+    background-repeat: no-repeat;
+  }
+
+  .schedule__list {
+    width: 27%;
+  }
+
+  .description--left {
+    width: 43%;
+  }
+  .description--left img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .description--right {
+    width: 43%;
+    padding: 3.2rem 0;
+    align-self: flex-start;
+    position: relative;
+  }
+
+  .description__container {
+    gap: 3.2rem;
+  }
+
+  .description--section {
+    padding: 0 8rem;
+    padding-top: 5rem;
+  }
+
+  .hero--section__home {
+    background-position: 0 -13rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .product--cards__container {
+    width: 100%;
+  }
+
+  .form__container--left {
+    width: 90%;
+    padding: 7% 4% 4% 4%;
+  }
+
+  .form__container--right {
+    width: 10%;
+  }
+
+  .form--heading__home {
+    font-size: 2.4rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .nav__el {
+    display: none !important;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+
+  .signup--form {
+    padding: 5% 6%;
+  }
+
+  .section--pricing {
+    padding: 6% 8%;
+  }
+
+  .section--img {
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  .schedule__list {
+    width: 32%;
+  }
+
+  .description--left {
+    width: 50%;
+  }
+
+  .description--right {
+    width: 45%;
+    padding: 2.4rem 8px;
+    position: relative;
+  }
+
+  .product--attribute__text {
+    line-height: 2;
+    font-size: 1.6rem;
+  }
+
+  .instructor--signiature {
+    font-size: 1.6rem;
+  }
+
+  .description__container {
+    gap: 4.8rem;
+  }
+
+  .hero--section__home {
+    background-position: 0 -5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .schedule__list--item {
+    font-size: 1.6rem;
+  }
+
+  .schedule__list {
+    width: 37%;
+  }
+
+  .alert {
+    padding: 15px 30px;
+    width: 75vw;
+  }
+
+  .description__container {
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 0;
+  }
+  .description--right {
+    width: 60%;
+    padding: 0;
+    align-self: center;
+    position: relative;
+  }
+
+  .description--left {
+    width: 60%;
+  }
+
+  .description--section::after {
+    width: 100%;
+    padding-top: 8rem;
+  }
+
+  .instructor--signiature {
+    font-size: 1.6rem;
+    bottom: -13%;
+  }
+
+  .hero--section__home {
+    background-position: 0;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .product--card {
+    width: 70%;
+  }
+  .product--cards__container {
+    gap: 5%;
+  }
+
+  .form__container--left {
+    width: 90%;
+    padding: 8% 4% 4% 4%;
+  }
+  .form__container--right {
+    width: 10%;
+  }
+
+  .section--pricing.wa--pricing {
+    padding: 11% 8%;
+  }
+
+  .hero--cta {
+    width: 25%;
+  }
+  .section--img {
+    background-repeat: no-repeat;
+    background-image: url(/img/park-photos/wa2.jpeg);
+  }
+
+  .hero--title {
+    font-size: 4.2rem;
+  }
+  .hero--subtitle {
+    font-size: 1.5rem;
+  }
+
+  .schedule__list {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .schedule__container {
+    gap: 0;
+  }
+
+  .schedule__list--item {
+    font-size: 1.5rem;
+  }
+
+  .hero--section__home {
+    background-position: -2.8rem 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .product--cards__container {
+    flex-direction: column;
+  }
+
+  .product--card {
+    width: 90%;
+  }
+
+  .product--card:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+
+  .product--attributes__container {
+    align-self: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .form__container--right {
+    width: 5%;
+  }
+
+  .form__container--left {
+    width: 95%;
+    padding: 10% 4% 4% 4%;
+  }
+
+  .signup--form {
+    padding: 6% 0%;
+  }
+
+  .signup--form__container {
+    border-radius: 0;
+    margin-top: 12px;
+  }
+
+  .section--pricing {
+    padding: 10% 8%;
+    padding-bottom: 12%;
+  }
+
+  .section--pricing.wa--pricing {
+    padding: 10% 8%;
+  }
+
+  .hero--title {
+    font-size: 3.2rem;
+  }
+
+  .description--right {
+    width: 67%;
+  }
+
+  .description--left {
+    width: 67%;
+  }
+
+  .product--info__heading,
+  .schedule--heading,
+  .description--heading {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero--cta {
+    width: 33%;
+  }
+
+  .schedule__list {
+    list-style: none;
+    width: 41%;
+  }
+  .schedule__container {
+    gap: 14px;
+  }
+  .schedule__list--item {
+    font-size: 1.5rem;
+  }
+  .description--right {
+    width: 83%;
+  }
+  .description--left {
+    width: 83%;
+  }
+
+  .description--heading {
+    margin: 0 0 2.4rem 0;
+  }
+  .section--pricing.wa--pricing {
+    padding: 16% 8%;
+  }
+
+  .hero--section__home {
+    background-position: -4rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .schedule__list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .description--right {
+    width: 95%;
+  }
+
+  .description--left {
+    width: 95%;
+  }
+
+  .description--heading {
+    margin: 3.2rem 0 2.4rem 0;
+  }
+
+  .description--section {
+    padding: 0 4.8rem;
+  }
+}
+
+/* Height Changes */
+@media screen and (max-height: 600px) {
+  .sticky {
+    height: 20vh;
+  }
+}
+@media screen and (max-height: 500px) {
+  .sticky {
+    height: 23vh;
+  }
+}
+@media screen and (max-height: 400px) {
+  .sticky {
+    height: 25vh;
+  }
+  .logo img {
+    height: 6.8rem;
+  }
+}

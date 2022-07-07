@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/general.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="/public//js/index.js"></script>
+    <title>EHP | Swim Lessons</title>
+  </head>
+  <body>
+    <main>
+      <section class="section--pricing">
+        <h1 class="product--info__heading">Details & Pricing</h1>
+        <div class="product--cards__container">
+          <div class="product--card">
+            <h4 class="small--heading">Single Lesson</h4>
+            <span class="lesson--price">$50</span>
+            <div class="product--attributes__container">
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text">Private lesson</span>
+              </div>
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text">30 minutes</span>
+              </div>
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text">Pay per lesson</span>
+              </div>
+            </div>
+            <div class="btn__container">
+              <button class="product--card__btn">Sign Up</button>
+            </div>
+          </div>
+          <div class="product--card">
+            <div class="save__badge">
+              <span>DEAL</span>
+            </div>
+            <h4 class="small--heading">Package Bundle</h4>
+            <span class="lesson--price">$450</span>
+            <div class="product--attributes__container">
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text">10 private lessons</span>
+              </div>
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text">30 minutes</span>
+              </div>
+              <div class="product--attribute">
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <span class="product--attribute__text"
+                  >Pay up front (non-refundable)</span
+                >
+              </div>
+            </div>
+            <div class="btn__container">
+              <button class="product--card__btn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup--form">
+        <div class="signup--form__container">
+          <div class="form__container--left">
+            <!-- <h2 class="form--heading home">Sign Up</h2> -->
+            <form action="" class="form lesson">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input
+                  id="name"
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Phone</label>
+                <input
+                  id="phone"
+                  class="form__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter a phone number to contact you with"
+                  required
+                />
+              </div>
+              <div class="form__group select split--input">
+                <div class="split--group">
+                  <label for="age" class="form__label">Age</label>
+                  <select name="age" id="age" class="form__select">
+                    <option value="1">< 1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11+">11+</option>
+                  </select>
+                </div>
+
+                <div class="split--group">
+                  <label for="gender" class="form__label">Gender</label>
+                  <select name="gender" id="gender" class="form__select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__group select split--input">
+                <div class="split--group">
+                  <label for="preferredDates" class="form__label"
+                    >Preferred Time</label
+                  >
+                  <select
+                    name="preferredDates"
+                    id="preferredDates"
+                    class="form__select"
+                  >
+                    <option value="none">No Preference</option>
+                    <option value="mornings">Mornings</option>
+                    <option value="afternoons">Afternoons</option>
+                    <option value="weekends">Weekends</option>
+                    <option value="weekdays">Weekdays</option>
+                    <option value="weekendMornings">Weekend Mornings</option>
+                    <option value="weekdayMornings">Weekday Mornings</option>
+                    <option value="weekendAfternoons">
+                      Weekend Afternoons
+                    </option>
+                    <option value="weekdayAfternoons">
+                      Weekday Afternoons
+                    </option>
+                  </select>
+                </div>
+                <div class="split--group">
+                  <label for="preferredInstructor" class="form__label"
+                    >Preferred Instructor</label
+                  >
+                  <select
+                    name="preferredInstructor"
+                    id="preferredInstructor"
+                    class="form__select"
+                  >
+                    <option value="none">No Preference</option>
+                    <option value="will">Will</option>
+                    <option value="scott">Scott</option>
+                    <option value="ryan">Ryan</option>
+                    <option value="bryan">Bryan</option>
+                    <option value="kailen">Kailen</option>
+                    <option value="max">Max</option>
+                    <option value="alex">Alex</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="addedNotes" class="form__label">Add Notes</label>
+                <textarea
+                  rows="5"
+                  name="addedNotes"
+                  id="addedNotes"
+                  placeholder="Please provide some notes on the current level of the requested swimmer, and any specific goals you are looking to achieve with private lessons"
+                ></textarea>
+              </div>
+              <div class="btn__container">
+                <button class="btn__submit">Register</button>
+              </div>
+            </form>
+          </div>
+          <div class="form__container--right"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

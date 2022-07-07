@@ -1,0 +1,20 @@
+section.signup--form#lesson--form
+  .signup--form__container
+    h1.form--heading__home Sign Up
+    .form__container--left
+      form.form.wa--signup(action='')
+        .form__group
+          label.form__label(for='name') Name
+          input#name.form__input(type='text' name='name' placeholder='Enter your name' required='')
+        .form__group
+          label.form__label(for='phone') Phone
+          input#phone.form__input(type='tel' name='phone' placeholder='Enter a phone number to contact you with' required='')
+        .form__group
+          label.form__label(for='email') Email
+          input#email.form__input(type='tel' name='email' placeholder='Enter your email' required='')
+        .form__group
+          label.form__label(for='addedNotes') Add Notes
+          textarea#addedNotes(rows='5' name='addedNotes' placeholder='Include any questions, comments or concerns here')
+        .btn__container
+          button.btn__submit Submit
+    .form__container--right

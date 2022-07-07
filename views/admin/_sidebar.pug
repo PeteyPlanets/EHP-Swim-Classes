@@ -1,0 +1,8 @@
+nav.user-view__menu
+  ul.side-nav
+  if (user.role === 'admin')
+    .admin-nav
+      h5.admin-nav__heading Admin
+      ul.side-nav
+        +navItem('/admin', 'Settings', 'settings-outline')
+        +navItem('/admin/lessons', 'Lessons', 'clipboard-outline', true)

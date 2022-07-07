@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Export HTML data to excel</title>
+    <h2>Lafuerza Email List</h2>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/admin.css" />
+    <script type="text/javascript" src="exportExcel.js"></script>
+  </head>
+  <body>
+    <table id="tblStocks" cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Email</th>
+        <th>Date Acquired</th>
+      </tr>
+      <tr>
+        <td>Life HealthCare INC</td>
+        <td>A</td>
+      </tr>
+    </table>
+    <br />
+    <button onclick="exportData()">
+      <span class="glyphicon glyphicon-download"></span>
+      Download list
+    </button>
+  </body>
+</html>
